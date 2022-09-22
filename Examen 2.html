@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="SegundoExamen.css">
+    <script type="text/javascript">
+    	
+    	function convertirMoneda(){
+    		var bol=Number(document.getElementById('bolivianos').value); 
+    		var dol=Number(document.getElementById('dolares').value);
+    		var eur=Number(document.getElementById('euros').value);
+    		var conbol=bol*0.15;
+    		var condol=dol*6.83;
+    		var coneu=eur*0.98;
+    		document.getElementById('resbol').value=conbol;
+    		document.getElementById('resdol').value=condol;
+    		document.getElementById('reseu').value=coneu;
+
+    	}
+    	function inicioSecion() {
+    		
+    		var nombre=document.getElementById('nombreusu').value;
+    		document.getElementById('nombresecion').value=nombre;
+            window.alert("Bienbenido " + nombre);
+            window.scrollTo(0, 0);
+    	}
+    </script>
+</head>
+<body>
+    <div class="principal">
+        <nav>
+            <div>
+            	<img class="imglog" src="https://img.freepik.com/vector-gratis/casino-juegos-nocturnos-simbolos-composicion-poster_1284-15043.jpg?w=740&t=st=1663684685~exp=1663685285~hmac=297998a4f85f4153fdb0af29e015ec710e0c10f8060cf95b0b4398da4d7ec69a">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Portafolio</a></li>
+                    <li><a href="">Mas</a></li>
+                </ul>
+            </div>
+            <div class="bienvenido">
+                <article class="logo1">Bienvenido</article>
+                <input type="text" id="nombresecion" placeholder="???" class="nombreI"disabled>
+            </div>
+        </nav>
+        <figure>
+            <h1 class="h1">CASINO</h1>
+            <H1 class="h2" >"EL DORADO"</H1>
+        </figure>
+        <main>
+        	<section>
+   	    		<h2 class="h2sec"> CONVERSOR DE MONEDAS</h2>
+
+        	</section>
+        	<section>
+            	<input type="button"  class="conversor" value="Convertir" onclick="convertirMoneda()">
+
+        	</section>
+        	       		
+            <section>
+
+                <article>
+                	<br>
+                	<p>De Bolivianos A Dolares</p><br>
+                	<input type="text" placeholder="Ingrese un monto"class="inputconver" id="bolivianos"> <br>
+                	<p>El monto de converción es :</p><br>
+                	<input	type="text" id="resbol" class="inputconver" disabled>
+                	                </article>
+                <article>
+                	<br>
+                	<p>De Dolares a Bolivianos</p><br>
+                	<input type="text" placeholder="Ingrese un monto"class="inputconver" id="dolares"><br>
+                	<p>El monto de converción es :</p><br>
+                	<input	type="text" id="resdol" class="inputconver" disabled>
+                	
+                </article>
+                <article>
+                	<br>
+                	<p>De Bolivianos A Yuanes</p><br>
+                	<input type="text" placeholder="Ingrese un monto"class="inputconver" id="euros"><br> 
+                	<p>El monto de converción es :</p><br>
+                	<input	type="text" id="reseu" class="inputconver" disabled > 
+                	
+                </article>
+                
+            </section>
+        </main>
+        <footer>   
+        <section>
+                <h2 class="h2sec">Inicie Seción</h2>
+            </section>
+            <section>
+                <input type="text" class="log3" id="nombreusu"  placeholder="Ingrese su Nombre">
+            </section>
+            <section>
+                <input type="button" class="input1" value="Aceptar" onclick="inicioSecion()">
+            </section>     	
+        	<section>
+        		<img class="imglog" src="https://img.freepik.com/vector-gratis/casino-juegos-nocturnos-simbolos-composicion-poster_1284-15043.jpg?w=740&t=st=1663684685~exp=1663685285~hmac=297998a4f85f4153fdb0af29e015ec710e0c10f8060cf95b0b4398da4d7ec69a">
+        	</section>
+        	<section>
+        		<div class="caja">
+                    <section>
+                        <img src="https://www.auditool.org/images/images/414602-PD6SHV-954.jpg" class="imgim">
+                    </section>
+                    <section>
+                        <h4>Genrente </h4> 
+                    </section><br>
+                    <section>
+                        <p>Lo que hacen:
+                        Planifican, dirigen o coordinan las operaciones de juego de un casino. Pueden formular las reglas de la casa.. <a href="">Leer..</a></p>
+                    </section>    
+                </div>
+	            <div class="caja">
+                    <section>
+                        <img src="https://media.istockphoto.com/photos/young-roulette-dealer-in-a-casino-picture-id171372790?k=20&m=171372790&s=612x612&w=0&h=scK3EvdjluA2nItjR7Se_a_oMEsiApUrfNeID8VT2VY=" class="imgim">
+                    </section>
+                    <section>
+                        <h4>Croupier</h4> 
+                    </section>
+                    <section>
+                        <p> Esta es la imagen estereotipada del trabajador de un casino, las palabras “hagan juego señores”  <a href="">Leer..</a></p>
+                    </section>
+                </div>
+	            <div class="caja">
+                    <section>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_peli7kgmLVrRjq7YJ7GlxZ9_GozlYj8Ng&usqp=CAU" class="imgim">
+                    </section>
+                    <section>
+                        <h4>Camarero</h4> 
+                    </section>
+                    <section>
+                        <p>Hay poco que comentar de este puesto de trabajo que no se sepa. Son los responsables de la atención al cliente en todo momento.<a href="">Leer..</a></p>
+                    </section>   
+                </div>
+	            <div class="caja2">
+                    <section>
+                        <h4 class="h41">REDES SOCILES</h4>
+                    </section><br>
+                    <section class="section2">
+                        <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" class="imgrs">
+                        <p><a href="" class="a2"></a>CasinosElDorado</p>
+                    </section><br>
+                    <section class="section2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1200px-Gmail_icon_%282020%29.svg.png" alt="" class="imgrs">
+                        <p><a href="" class="a2">casinoseldorado2022@gmail.com</a></p>
+                    </section><br>
+                    <section class="section2">
+                        <img src="https://www.pngfind.com/pngs/m/311-3118112_png-file-svg-logo-telefono-png-transparent-png.png" alt="" class="imgrs">
+                    <p><a href="" class="a2">(53) 8903645263</a></p> 
+                    </section>
+                    
+                    
+                     
+                     
+                </div>
+        	</section>
+            
+        </footer>
+    </div>
+</body>
+</html>
